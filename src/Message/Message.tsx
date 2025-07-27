@@ -10,7 +10,7 @@ const fixedMessages: Record<string, string> = {
     Carregamento: 'Prezado Sr.@, Assim que finalizado o carregamento e a amarração, solicitamos, por gentileza, o envio das fotos das notas fiscais para prosseguirmos com a documentação. 📸 📝',
     Pedagio: 'Prezado Sr.@, Pedimos que solicite o Vale-Pedágio na portaria, para que possamos dar continuidade ao envio de sua documentação. 🛣️ 📄',
     Descarga: 'Agradecemos pelo envio das informações. Procederemos com a baixa da documentação conforme recebido. ✅ 📂',
-    Notas: 'Grato pelos envios prestados, em breve retornaremos com suas documentações no grupo',
+    Notas: 'Grato pelos envios prestados, em breve retornaremos com suas documentações no grupo. 📄 ✅ ',
     Atraso: 'Sr.@,estamos com alta demanda no momento. Mas assim que tivermos disponibilidade retornaremos no grupo com suas documentações',
     Cadastro: 'Cadastro motorista: sendo iniciado',
     CadMessage:'Prezado Sr.@, Para prosseguirmos com o cadastro requerido, solicitamos atenção especial à apresentação completa e legível dos seguintes documentos:📌 PIS/INSS do proprietário da ANTT vinculada ao cavalo-mecânico;🏠 Comprovante de residência atualizado e de leitura nítida;🚘 CNH atualizada, preferencialmente em versão digital com QR Code legível;📞 Contato telefônico do motorista para registro;📄 CRLV do cavalo-mecânico, emitido no ano vigente, em formato digital ou foto nítida que abranja o documento por completo;📄 CRLV do semi-reboque, também atualizado no ano vigente, em versão digital ou imagem legível e completa.Contamos com sua colaboração para garantir a agilidade e eficiência no processo de cadastramento.🤝 Atenciosamente, Equipe da Expedição',

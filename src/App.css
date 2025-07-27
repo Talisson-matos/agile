@@ -46,6 +46,14 @@ body {
   left: 10px;
 }
 
+.formatador_agile{
+ position: absolute;
+  top: 140px;
+  left: 10px;
+  width: inherit;
+}
+
+
 .styled-button {
   background-color: #2563eb;
   color: white;

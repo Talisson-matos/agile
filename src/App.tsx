@@ -87,14 +87,14 @@ function App() {
   const copyGuiaToClipboard = () => {
     if (!resultado) return
     const lines = [
-      `CTE: ${guiaNumero}`,
-      `SERIE: ${guiaSerie}`,
-      `MOTORISTA: ${guiaMotorista}`,
-      `LINHA: ${guiaLinha}`,
-      `VALOR PRESTAÇÃO: ${formatarRS(parseFloat(frete.replace(',', '.')))}`,
-      `VALOR ICMS(${taxa}%): ${formatarRS(resultado.valorICMS)}`,
-      `CREDITO PRESUMIDO: ${formatarRS(resultado.creditoPresumido)}`,
-      `ICMS A RECOLHER: ${formatarRS(resultado.icmsRecolher)}`,
+      `- CTE: ${guiaNumero}`,
+      `- SERIE: ${guiaSerie}`,
+      `- MOTORISTA: ${guiaMotorista}`,
+      `- LINHA: ${guiaLinha}`,
+      `- VALOR PRESTAÇÃO: ${formatarRS(parseFloat(frete.replace(',', '.')))}`,
+      `- VALOR ICMS(${taxa}%): ${formatarRS(resultado.valorICMS)}`,
+      `- CREDITO PRESUMIDO: ${formatarRS(resultado.creditoPresumido)}`,
+      `- ICMS A RECOLHER: ${formatarRS(resultado.icmsRecolher)}`,
     ].join('\n')
     navigator.clipboard.writeText(lines)
     setGuiaCopied(true)
@@ -137,12 +137,12 @@ function App() {
   if (!resultado) return;
 
   const parts = [
-    ...obsList.map(text => text),
+    ...obsList.map(text => `- ${text}`),
     sinistroAdded
-      ? 'AO OCORRER SINISTRO LIGUE PARA A CENTRAL DO SEGURO ATRAVÉS DO TELEFONE 0800 292 1234'
+      ? '- AO OCORRER SINISTRO LIGUE PARA A CENTRAL DO SEGURO ATRAVÉS DO TELEFONE 0800 292 1234'
       : '',
-    `VALOR PRESTAÇÃO: ${formatarRS(parseFloat(frete.replace(',', '.')))} - VALOR ICMS(${taxa}%): ${formatarRS(resultado.valorICMS)}`,
-    `CREDITO PRESUMIDO: ${formatarRS(resultado.creditoPresumido)} - ICMS A RECOLHER: ${formatarRS(resultado.icmsRecolher)}`,
+    `- VALOR PRESTAÇÃO: ${formatarRS(parseFloat(frete.replace(',', '.')))} - VALOR ICMS(${taxa}%): ${formatarRS(resultado.valorICMS)}`,
+    `- CREDITO PRESUMIDO: ${formatarRS(resultado.creditoPresumido)} - ICMS A RECOLHER: ${formatarRS(resultado.icmsRecolher)}`,
   ].filter(line => line !== '').join('\n');
 
   // Copia como texto plano (sem formatação)
@@ -163,6 +163,12 @@ function App() {
         <Link className="formatador_link" to="/formatador">
           <button className="styled-button">
             🧼 FORMATADOR DE CHAVES
+          </button>
+        </Link>
+
+        <Link className="formatador_agile" to="/agile">
+          <button className="styled-button">
+         🚀 Agile
           </button>
         </Link>
 
